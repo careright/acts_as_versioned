@@ -41,7 +41,6 @@ jobs:
       -
         name: Bundle Install ${{ matrix.gemfile }}
         run: |
-          bundle config set --local deployment 'true'
           bundle install
       -
         name: Run test suite
