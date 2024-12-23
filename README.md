@@ -1,6 +1,6 @@
 ## DbActsAsVersioned ##
 
-acts_as_versioned is a gem for Rails 6.1 to enable easy versioning of models. As a versioned model is updated revisions are kept in a seperate table, providing a record of what changed.
+acts_as_versioned is a gem for Rails 7.1 to enable easy versioning of models. As a versioned model is updated revisions are kept in a seperate table, providing a record of what changed.
 
 ## Update:
 
