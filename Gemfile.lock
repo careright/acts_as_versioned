@@ -43,10 +43,8 @@ GEM
     power_assert (2.0.1)
     rake (13.0.6)
     securerandom (0.3.2)
-    sqlite3 (1.6.9)
+    sqlite3 (2.0.4)
       mini_portile2 (~> 2.8.0)
-    sqlite3 (1.6.9-x86_64-darwin)
-    sqlite3 (1.6.9-x86_64-linux)
     test-unit (3.4.4)
       power_assert
     timeout (0.4.3)
@@ -66,4 +64,4 @@ DEPENDENCIES
   test-unit
 
 BUNDLED WITH
-   2.2.25
+   2.2.33
