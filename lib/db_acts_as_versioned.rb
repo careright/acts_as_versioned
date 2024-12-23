@@ -363,6 +363,8 @@ module ActiveRecord #:nodoc:
         # custom version condition checking.
         def version_condition_met?
           case
+            when version_condition.is_a?(Proc)
+              version_condition.call(self)
             when version_condition.is_a?(Symbol)
               send(version_condition)
             else
