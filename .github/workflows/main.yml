@@ -13,7 +13,7 @@ jobs:
         include:
           -
             name: "Default"
-            ruby: 2.7.4
+            ruby: 2.7.8
           -
             ruby: 3.0.2
 
