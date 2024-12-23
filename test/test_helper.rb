@@ -26,7 +26,7 @@ require_relative 'models/landmark'
 class ActiveSupport::TestCase #:nodoc:
   include ActiveRecord::TestFixtures
 
-  self.fixture_path = File.dirname(__FILE__) + "/fixtures/"
+  self.fixture_paths = File.dirname(__FILE__) + "/fixtures/"
 
   # Instantiated fixtures are slow, but give you @david where you otherwise would need people(:david)
   self.use_instantiated_fixtures  = false
