@@ -257,12 +257,8 @@ module ActiveRecord #:nodoc:
         versioned_class.set_sequence_name version_sequence_name if version_sequence_name
       rescue ActiveRecord::NoDatabaseError
         # Ignore - For example, loading a model during db:create
-      rescue e
-        if Object.const_defined?(:TinyTds) && e.is_a?(TinyTds::Error)
-          raise e unless e.message.match?(/^Database \S+ does not exist/)
-        else
-          raise e
-        end
+      rescue
+        raise $! unless $!.message.match?(/^Database \S+ does not exist/)
       end
 
       module Behaviors
