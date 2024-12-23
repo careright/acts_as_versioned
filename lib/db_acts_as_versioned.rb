@@ -185,9 +185,7 @@ module ActiveRecord #:nodoc:
 
         if block_given?
           extension_module_name = "#{versioned_class_name}Extension"
-          silence_warnings do
-            self.const_set(extension_module_name, Module.new(&extension))
-          end
+          self.const_set(extension_module_name, Module.new(&extension))
 
           options[:extend] = self.const_get(extension_module_name)
         end
