@@ -37,7 +37,6 @@ jobs:
       -
         name: Set Env 2.2.25
         run: |
-          gem update --system
           gem install bundler:2.2.25
       -
         name: Bundle Install ${{ matrix.gemfile }}
