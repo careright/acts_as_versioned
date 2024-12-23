@@ -366,8 +366,6 @@ module ActiveRecord #:nodoc:
           case
             when version_condition.is_a?(Symbol)
               send(version_condition)
-            when version_condition.respond_to?(:call) && (version_condition.arity == 1 || version_condition.arity == -1)
-              version_condition.call(self)
             else
               version_condition
           end
